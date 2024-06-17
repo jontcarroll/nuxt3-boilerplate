@@ -1,13 +1,18 @@
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout name="default">
+    <NuxtPage
+      :transition="{
+        name: 'page',
+        mode: 'out-in'
+      }"
+    />
+  </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
   import { SiteStore } from '~/stores/site'
+
+  const route = useRoute()
 
   const site = SiteStore.use()
 

@@ -9,10 +9,34 @@ export default {
     './error.vue'
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        monoton: ['Monoton', 'sans-serif'],
+        chakra: ['Chakra Petch', 'sans-serif']
+      }
+    }
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'), require('@tailwindcss/typography')],
   daisyui: {
-    themes: ['light', 'dark', 'cupcake']
+    themes: [
+      'light',
+      'dark',
+      'cupcake',
+      'coffee',
+      'dracula',
+      'synthwave',
+      'retro',
+      'night',
+      'cmyk',
+      'nord',
+      'emerald',
+      'lofi',
+      'black',
+      'lemonade',
+      'forest',
+      'aqua',
+      'sunset',
+      'corporate'
+    ]
   }
 }
