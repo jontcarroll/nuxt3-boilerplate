@@ -13,5 +13,10 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [svgLoader()]
+  },
+  app: {
+    head: {
+      script: [{ src: '/js/noFlicker.js' }]
+    }
   }
 })

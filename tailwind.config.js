@@ -16,27 +16,9 @@ export default {
       }
     }
   },
+  darkMode: ['class', '[data-theme="dark"]'],
   plugins: [require('daisyui'), require('@tailwindcss/typography')],
   daisyui: {
-    themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'coffee',
-      'dracula',
-      'synthwave',
-      'retro',
-      'night',
-      'cmyk',
-      'nord',
-      'emerald',
-      'lofi',
-      'black',
-      'lemonade',
-      'forest',
-      'aqua',
-      'sunset',
-      'corporate'
-    ]
+    themes: ['light', 'dark']
   }
 }
